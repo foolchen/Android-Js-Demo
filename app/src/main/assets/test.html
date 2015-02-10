@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>修改字体大小.html</title>
+
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <style type="text/css">
+        div{
+        border:1px red solid;
+        width:455px;
+        font-size:16px;
+        }
+        .max{
+        font-size:20px;
+        }
+        .moren{
+        font-size:16px;
+        }
+        .min{
+        font-size:12px;
+        }
+    </style>
+    <script type="text/javascript">
+//此种方式降低了js和CSS的耦合性 
+function changeFontSize(fontStyle){ 
+// 获取节点对象 
+var divNode = document.getElementsByTagName("div")[0]; 
+// 设置该节点的Name属性以及属性值 
+divNode.className=fontSize; 
+} 
+ 
+function changeFontSize2(fontSize){ 
+// 获取节点对象 
+var divNode = document.getElementsByTagName("div")[0]; 
+divNode.style.fontSize=fontSize; 
+var divNode = document.getElementsByTagName("div")[1]; 
+divNode.style.fontSize=fontSize; 
+} 
+ 
+</script>
+</head>
+<body>
+<a href="javascript:void(0)" onclick="changeFontSize2('20px')" class="max">大号</a>
+<a href="javascript:void(0)" onclick="changeFontSize2('16px')" class="moren">中号</a>
+<a href="javascript:void(0)" onclick="changeFontSize2('12px')" class="min">小号</a>
+<div>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小<br/>
+</div>
+<div>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+    这里呢就是显示的文字，通过点击上面的超链接改变此字体大小!<br/>
+</div>
+</body>
+</html> 
