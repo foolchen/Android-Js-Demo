@@ -25,21 +25,20 @@
         }
     </style>
     <script type="text/javascript">
-//此种方式降低了js和CSS的耦合性 
-function changeFontSize(fontStyle){ 
-// 获取节点对象 
-var divNode = document.getElementsByTagName("div")[0]; 
-// 设置该节点的Name属性以及属性值 
-divNode.className=fontSize; 
-} 
- 
-function changeFontSize2(fontSize){ 
-// 获取节点对象 
-var divNode = document.getElementsByTagName("div")[0]; 
-divNode.style.fontSize=fontSize; 
-var divNode = document.getElementsByTagName("div")[1]; 
-divNode.style.fontSize=fontSize; 
-} 
+
+        function changeFontSize(fontSize){
+        // 获取节点对象
+        /*var divNode = document.getElementsByTagName("div")[0];
+                    divNode.style.fontSize=fontSize;
+                    var divNode = document.getElementsByTagName("div")[1];
+                    divNode.style.fontSize=fontSize;*/
+        var d=document.getElementsByTagName("div");  //获取tag名称为div的html元素们
+
+        for(i=0;i<d.length;i++) {//遍历tag名称为div的html元素们
+                var divNode = d[i];
+                divNode.style.fontSize=fontSize;
+                }
+        }
  
 </script>
 </head>
